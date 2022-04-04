@@ -23,3 +23,8 @@ div>ul>a {
     color: black;
 
 }
+
+.nav {
+    margin: 15px;
+    padding: 0;
+}
