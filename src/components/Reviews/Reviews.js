@@ -1,10 +1,16 @@
 import React from 'react';
+import useReview from '../../hooks/useReview';
+import ReviewDetail from '../ReviewDetail/ReviewDetail';
 import './Reviews.css';
 
 const Reviews = () => {
+    const reviews = useReview();
     return (
         <div>
-            <h2>Review Section</h2>
+            {reviews.map(review => <ReviewDetail
+                key={review.id}
+                review={review}
+            ></ReviewDetail>)}
         </div>
     );
 };
