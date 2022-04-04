@@ -1,8 +1,8 @@
 import React from 'react';
-import './ReviewDetail.css'
 
-const ReviewDetail = ({ review }) => {
+const ReviewCard = ({ review }) => {
     const { name, date, comments, imageUrl, rating } = review;
+
     return (
         <div className='review-details border border-gray-400 m-8 shadow-lg'>
             <div className='flex m-8'>
@@ -17,4 +17,4 @@ const ReviewDetail = ({ review }) => {
     );
 };
 
-export default ReviewDetail;
+export default ReviewCard;

@@ -1,10 +1,14 @@
 import { useNavigate } from 'react-router-dom';
 import useProduct from '../../hooks/useProduct';
+import useReview from '../../hooks/useReview';
+import ReviewCard from '../ReviewCard/ReviewCard';
 import './Home.css';
 
 const Home = () => {
     const products = useProduct();
     const navigate = useNavigate();
+    const allReviews = useReview();
+    const reviews = allReviews?.length > 3 ? [...allReviews].slice(0, 3) : [...allReviews];
     return (
         <div>
             <div className='grid grid-cols-2 gap-4'>
@@ -22,7 +26,14 @@ const Home = () => {
             </div>
             <div className='my-5'>
                 <h1 className='my-2 text-2xl font-bold'>Customer Review(3)</h1>
-
+                <div>
+                    {
+                        reviews.map(review => <ReviewCard
+                            key={review.id}
+                            review={review}
+                        ></ReviewCard>)
+                    }
+                </div>
                 <button onClick={() => navigate("/reviews")} className="bg-blue-500 hover:bg-blue-700 text-white font-bold pb-1 px-4 rounded">See all Reviews</button>
             </div>
         </div>
