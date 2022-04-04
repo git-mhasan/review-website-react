@@ -26,7 +26,7 @@ const Home = () => {
             </div>
             <div className='my-5'>
                 <h1 className='my-2 text-2xl font-bold'>Customer Review({reviews?.length})</h1>
-                <div>
+                <div className='flex'>
                     {
                         reviews.map(review => <ReviewCard
                             key={review.id}
