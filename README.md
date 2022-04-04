@@ -6,7 +6,7 @@ Live Link of the site is:
 ## What we offer
 In this website you will find-
 * A wide range of collection of Laptops.
-* You can see what our satisfied customers story.
+* You can see the story of our satisfied customers.
 * We Provide One year after sales services.
 * We are 24/7 open to any of your queries.
 
