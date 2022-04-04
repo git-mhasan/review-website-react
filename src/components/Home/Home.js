@@ -25,7 +25,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='my-5'>
-                <h1 className='my-2 text-2xl font-bold'>Customer Review(3)</h1>
+                <h1 className='my-2 text-2xl font-bold'>Customer Review({reviews?.length})</h1>
                 <div>
                     {
                         reviews.map(review => <ReviewCard
