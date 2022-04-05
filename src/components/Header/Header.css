@@ -2,13 +2,6 @@
     box-sizing: border-box;
 }
 
-.header-bar {
-    background-color: blanchedalmond;
-    /* height: 40px; */
-    /* margin: 5px; */
-    /* padding: 5px 0; */
-}
-
 .active {
     text-decoration: none;
     color: red;
