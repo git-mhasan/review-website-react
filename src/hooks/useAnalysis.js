@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const useProduct = () => {
+const useAnalysis = () => {
     const [chartData, setChartData] = useState([])
     useEffect(() => {
         fetch('analysis.json')
@@ -10,4 +10,4 @@ const useProduct = () => {
     return chartData;
 }
 
-export default useProduct;
+export default useAnalysis;
