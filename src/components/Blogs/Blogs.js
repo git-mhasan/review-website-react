@@ -30,9 +30,9 @@ const Blogs = () => {
                             <td className='m-8 p-4'>An inline element plases side by side one after another.</td>
                         </tr>
                         <tr>
-                            <td className='m-8 p-4'>A block element always takes up the full width available.
+                            <td className='m-4 p-4'>A block element always takes up the full width available.
                             </td>
-                            <td className='m-8 p-4'>An inline element takes only the necessary spaces required.</td>
+                            <td className='m-4 p-4'>An inline element takes only the necessary spaces required.</td>
                         </tr>
                         <tr >
                             <td className='m-8 p-4'>block elements have definite height and width property.</td>
